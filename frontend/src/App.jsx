@@ -51,7 +51,7 @@ function App() {
           {posts.map((post) => (
             <li key={post.id}>
               <div className="post-content">{post.content}</div>
-              <div className="post-meta">{new Date(post.createdAt).toLocaleString()}</div>
+              <div className="post-meta">{new Date(post.created).toLocaleString()}</div>
             </li>
           ))}
         </ul>
